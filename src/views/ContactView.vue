@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <h2 class="display-2">Contact Me</h2>
+            <h2 class="display-2 text-animation">Contact Me</h2>
         </div>
         </div>
         <div class="row">
@@ -81,4 +81,18 @@
 </script>
 
 <style scoped>
+
+.text-animation {
+  overflow: hidden;
+  animation: typing 3s backwards;
+  white-space: nowrap;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 </style>
