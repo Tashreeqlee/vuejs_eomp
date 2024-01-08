@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <router-link to="/">
-          <img class="img-fluid" src="" alt="logo" />
+          <!-- <img class="img-fluid w-25 h-25 items-align-start" src="https://i.postimg.cc/gJGkzzFc/Screenshot-2024-01-08-154314.png" alt="logo" /> -->
         </router-link>
         <button
           class="navbar-toggler"
@@ -55,4 +55,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>
