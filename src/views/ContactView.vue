@@ -14,13 +14,13 @@
                       <div class="row">
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="name" name="name" class="form-control" required>
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="John Cena" required>
                                         <label for="name" class="text-dark">Your name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="email" name="email" class="form-control" required>
+                                        <input type="text" id="email" name="email" class="form-control" placeholder="johncena@gmail.com" required>
                                         <label for="email" class="text-dark">Your email</label>
                                     </div>
                                 </div>

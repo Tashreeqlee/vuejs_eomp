@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <router-link to="/">
           <!-- <img class="img-fluid w-25 h-25 items-align-start" src="https://i.postimg.cc/gJGkzzFc/Screenshot-2024-01-08-154314.png" alt="logo" /> -->
@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link class="nav-link active" to="/"> Home </router-link>
+              <router-link class="nav-link" to="/"> Home </router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/about"> About </router-link>
@@ -55,5 +55,46 @@ export default {
 </script>
 
 <style scoped>
+/* Navbar background color */
+.navbar {
+  background-color: #5c95cf;
+}
+
+/* Navbar container */
+.container-fluid {
+  padding: 0 1rem;
+}
+
+/* Navbar logo */
+/* .navbar img {
+  width: 25%;
+  height: 25%;
+  object-fit: contain;
+} */
+
+/* Navbar toggler button */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+/* Navbar links */
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00ffbf;
+}
 
 </style>
