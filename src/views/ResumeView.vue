@@ -8,8 +8,20 @@
 
 <script>
     export default {
-        
-    }
+      computed: {
+    educations() {
+      return this.$store.state.educations;
+    },
+    experiences() {
+      return this.$store.state.experiences;
+    },
+  },
+
+  mounted() {
+    this.$store.dispatch("fetchEducations");
+    this.$store.dispatch("fetchExperiences");
+  },
+};
 </script>
 
 <style scoped>

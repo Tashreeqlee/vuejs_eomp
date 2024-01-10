@@ -28,7 +28,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: grey;
+  background-image: url(https://i.postimg.cc/d09rtF7F/futuristic-technological-wallpaper-79603-1093.jpg);
+  color: white;
 }
 
 nav {

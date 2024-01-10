@@ -61,9 +61,7 @@ export default {
 }
 
 /* Navbar container */
-.container-fluid {
-  padding: 0 1rem;
-}
+
 
 /* Navbar logo */
 /* .navbar img {
@@ -73,10 +71,7 @@ export default {
 } */
 
 /* Navbar toggler button */
-.navbar-toggler {
-  border: none;
-  background-color: transparent;
-}
+
 
 /* Navbar links */
 .navbar-nav {

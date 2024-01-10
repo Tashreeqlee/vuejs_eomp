@@ -1,8 +1,11 @@
 import { createStore } from 'vuex'
-import axios from 'axios'
 export default createStore({
   state: {
     projects: null,
+    testimonials: null,
+    educations: null, 
+    experiences: null,
+
   },
   getters: {
   },
@@ -10,16 +13,17 @@ export default createStore({
     setProjects: (state,value) => {
       state.projects = value;
     },
+    setTestimonials: (state, value) => {
+      state.testimonials = value; 
+    },
+    setEducations: (state, value) => {
+      state.educations = value;
+    },
+    setExperiences: (state, value) => {
+      state.experiences = value;
+    },
   },
   actions: {
-    // fetchData(context){
-    //   axios.get('https://tashreeqlee.github.io/vueporfoliodata/')
-    //   .then((projects)=>{
-    //     console.log(projects.data[0]);
-    //     context.commit("setProjects",projects.data[0])
-    //   })
-
-    // }
     async fetchProjects (context){
       try{
         let {projects} = await(await fetch('https://tashreeqlee.github.io/vueporfoliodata/')).json()
@@ -31,8 +35,47 @@ export default createStore({
       catch(e){
         console.error(error)
       }
-    }
+    },
+    async fetchTestimonials (context){
+      try {
+        let {testimonials} = await(await fetch('https://tashreeqlee.github.io/vueporfoliodata/')).json()
+        if (testimonials){
+          context.commit("setTestimonials", testimonials)
+        }
+        else {alert("error")}
+      }
 
+      catch(e){
+        console.error(error)
+      }
+    },
+    async fetchEducations (context){
+      try {
+        let {educations} = await(await fetch('https://tashreeqlee.github.io/vueporfoliodata/')).json()
+        if (educations){
+          context.commit("setEducations", educations)
+        }
+        else {alert("error")}
+      }
+
+      catch(e){
+        console.error(error)
+      }
+    },
+    async fetchExperiences (context){
+      try {
+        let {experiences} = await(await fetch('https://tashreeqlee.github.io/vueporfoliodata/')).json()
+        if (experiences){
+          context.commit("setExperiences", experiences)
+
+        }
+        else {alert("error")}
+      }
+
+      catch(e){
+        console.error(error)
+      }
+    },
   },
   modules: {
   }
