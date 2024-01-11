@@ -15,8 +15,8 @@
     >
       <div class="card">
         <div class="container">
-          <div class="card-body overflow-hidden w-100 h-100 position-relative">
-            <img :src="testimonial.image" :alt="testimonial.name" class="w-100 h-100"/>
+          <div class="card-body">
+            <img :src="testimonial.image" :alt="testimonial.name" class="h-100"/>
           </div>
         </div>
         <div class="description">
@@ -118,6 +118,14 @@
 }
 
 #connection {
-  color: white !important;
+  color: black !important;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 </style>
