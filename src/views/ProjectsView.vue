@@ -80,4 +80,14 @@ button {
   background-color: #5c95cf;
   border-radius: 6px;
 }
+button:hover{
+  transform: scale(1.1);
+}
+#card {
+  transition: transform 0.3s ease;
+}
+
+#card:hover {
+  transform: scale(1.1);
+}
 </style>

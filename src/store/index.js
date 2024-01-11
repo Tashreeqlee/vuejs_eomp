@@ -16,8 +16,8 @@ export default createStore({
     setTestimonials: (state, value) => {
       state.testimonials = value; 
     },
-    setEducations: (state, value) => {
-      state.educations = value;
+    setEducation: (state, value) => {
+      state.education = value;
     },
     setExperiences: (state, value) => {
       state.experiences = value;
@@ -49,11 +49,11 @@ export default createStore({
         console.error(error)
       }
     },
-    async fetchEducations (context){
+    async fetchEducation (context){
       try {
-        let {educations} = await(await fetch('https://tashreeqlee.github.io/vueporfoliodata/')).json()
-        if (educations){
-          context.commit("setEducations", educations)
+        let {education} = await(await fetch('https://tashreeqlee.github.io/vueporfoliodata/')).json()
+        if (education){
+          context.commit("setEducation", education)
         }
         else {alert("error")}
       }
