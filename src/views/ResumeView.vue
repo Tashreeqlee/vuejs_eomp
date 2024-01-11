@@ -5,16 +5,17 @@
           <div class="container-fluid">
       <div class="row">
         <h1>EDUCATION</h1>
-      
+      <div class="card">
       <div v-if="education" class="flex-container">
           <div v-for="education of education" :key="education.name">
           <h3>{{ education.date }}</h3>
-            <h2 class="text-white">
+            <h2 class="text-black">
               {{ education.name }}</h2>
               <p class="color">{{ education.description }}</p>
           </div>
         </div>
       </div>
+    </div>
     </div>
 
     <div class="col-md-12 mt-4 p-1" id="experience">
