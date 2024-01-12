@@ -30,7 +30,7 @@
           <img
             :src="project.image"
             :alt="project.name"
-            class="d-block w-100 img-fluid"
+            class="img-fluid"
             style="width: 100%; height: 100%"
           />
           <p class="text-center">{{ project.description }}</p>
@@ -90,4 +90,46 @@ button:hover{
 #card:hover {
   transform: scale(1.1);
 }
+
+/* media queries */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .card {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .card {
+    width: 25%;
+  }
+}
+
 </style>
