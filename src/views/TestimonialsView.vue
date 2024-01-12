@@ -60,45 +60,6 @@ export default {
     width: 100%;
   }
 }
-
-/* Flex container */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5px;
-  padding: 3px;
-}
-
-/* Testimonial card */
-.m-2 {
-  margin: 2px;
-}
-
-.col-4 {
-  width: 25%;
-}
-
-/* Testimonial info */
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Testimonial image */
-.image {
-  width: 100%;
-  text-align: center;
-}
-
-.image img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-}
-
 /* Testimonial description */
 .description {
   text-align: center;

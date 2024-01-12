@@ -1,15 +1,16 @@
 <template>
+  <div v-if="$store.sta"></div>
   <div class="container">
     <h2 class="display-2 text-animation">About Myself</h2>
     <div class="container-fluid m-2 p-5">
       <div class="row align-items-start">
         <div class="col-sm-4 col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
-          <div class="d-flex justify-content-center">
+          <div class="">
             <img
-              src="https://i.postimg.cc/vDRhHkwd/IMG-20230910-WA0041.jpg"
+              src="https://i.postimg.cc/8CTdss04/IMG-20230527-WA0098.jpg"
               alt="Tashreeq Lee"
               loading="lazy"
-              class="img-fluid"
+              class="img-fluid img-thumbnail"
               
             />
           </div>
@@ -44,11 +45,25 @@
         </div>
       </div>
     </div>
+    <div>
+    </div>
   </div>
+  <!-- <Spinner/> -->
 </template>
 
 <script>
-export default {};
+import Spinner from '@/components/Spinner.vue';
+export default {
+  components: {
+    Spinner,
+  },
+  data() {
+    return {
+      isLoading: true,
+      isLoading: false,
+    };
+  },
+};
 </script>
 
 <style scoped>
