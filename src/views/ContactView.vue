@@ -17,13 +17,13 @@
                       <div class="row">
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="name" name="name" class="form-control" placeholder="John Cena" required>
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="John Cena..." required>
                                         <label for="name" class="text-light">Your name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="email" name="email" class="form-control" placeholder="johncena@gmail.com" required>
+                                        <input type="text" id="email" name="email" class="form-control" placeholder="johncena@gmail.com..." required>
                                         <label for="email" class="text-light">Your email</label>
                                     </div>
                                 </div>
@@ -71,9 +71,6 @@
                                 <p class="text-light">Tashyct@gmail.com</p>
                         </ul>
                     </div>
-                    <div class="card justify-content-evenly w-50 h-50">
-                    <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1lhs71HbZ6S6cAR6VQVrpW2dolhw&hl=en&ehbc=2E312F"></iframe> -->
-                  </div>
                 </div>
               </div>
             </div>
