@@ -4,7 +4,7 @@
           </div>
           <div class="container-fluid">
       <div class="row">
-        <h1>EDUCATION</h1>
+        <h1 id="experience">EDUCATION</h1>
       <div class="card">
       <div v-if="education" class="flex-container">
           <div v-for="education of education" :key="education.name">
@@ -26,7 +26,7 @@
           class="flex-container d-flex flex-wrap justify-content-evenly"
         >
           <div v-for="experience of experiences" :key="experience.name">
-            <h4 class="fs-4 fw-bold text-primary " id="jobTitle">
+            <h4 class="fs-4 fw-bold" id="jobTitle">
               {{ experience.jobTitle }}
             </h4>
             <h5 class="fs-5 text-white">{{ experience.company }}</h5>
@@ -41,7 +41,7 @@
         <div v-else>Loading Experience...</div>
       </div>
     </div>
-      <h1>Skills</h1>
+      <h1 id="experience">Skills</h1>
             <div class="skills">
               <div class="logo-skills">
               <img src="https://i.postimg.cc/Tw9S9NCG/icons8-css-240-2.png" alt="CSS Logo" loading="lazy">
@@ -114,6 +114,16 @@ h1 {
 #experience {
   font-family: 'DM Serif Display', serif;
 }
+.card {
+  transition: transform 0.3s ease;
+}
 
+.card:hover {
+  transform: scale(1.1);
+}
+
+.fs-4{
+  color: rgb(3, 221, 3);
+}
 
 </style>

@@ -1,40 +1,41 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <h2 class="display-2 text-animation">Testimonials</h2>
-        </div>
-        <div
-    v-if="testimonials"
-    class="row row-cols-1 row-cols-sm-2 row-cols-lg-3"
-  >
-    <div
-      v-for="testimonial in testimonials"
-      :key="testimonial.name"
-      class="col d-flex justify-content-center mb-3"
-      id="section"
-    >
-      <div class="card">
-        <div class="container">
-          <div class="card-body">
-            <img :src="testimonial.image" :alt="testimonial.name" class="h-100"/>
+  <div class="container">
+    <div class="row">
+      <h2 class="display-2 text-animation">Testimonials</h2>
+    </div>
+    <div v-if="testimonials" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+      <div
+        v-for="testimonial in testimonials"
+        :key="testimonial.name"
+        class="col d-flex justify-content-center mb-3"
+        id="section"
+      >
+        <div class="card mb-3">
+          <div class="container">
+            <div class="card-body">
+              <img
+                :src="testimonial.image"
+                :alt="testimonial.name"
+                class="img-fluid mb-3"
+              />
+            </div>
           </div>
-        </div>
-        <div class="description">
-          <h1 class="fw-bold">{{ testimonial.name }}</h1>
-          <h2 class="fs-6 fw-semibold" id="connection">
-            {{ testimonial.connection }}
-          </h2>
-          <p>"{{ testimonial.message }}"</p>
+          <div class="description">
+            <h1 class="fw-bold">{{ testimonial.name }}</h1>
+            <h2 class="fs-6 fw-semibold" id="connection">
+              {{ testimonial.connection }}
+            </h2>
+            <p>"{{ testimonial.message }}"</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-    </div>
 </template>
 
 <script>
-    export default {
-      computed: {
+export default {
+  computed: {
     testimonials() {
       return this.$store.state.testimonials;
     },
@@ -42,8 +43,7 @@
   mounted() {
     this.$store.dispatch("fetchTestimonials");
   },
-        
-    }
+};
 </script>
 
 <style scoped>

@@ -10,7 +10,10 @@
                   <p class="text-center w-responsive mx-auto mb-5 text-light">Feel free to contact me for any enquiries.</p>
                 <div class="row">
                   <div class="col-md-9 mb-md-0 mb-5">
-                    <form action="https://formspree.io/f/moqogjkb" method="POST">
+                    <form
+  action="https://formspree.io/f/myyrzeky"
+  method="POST"
+>
                       <div class="row">
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
@@ -69,7 +72,7 @@
                         </ul>
                     </div>
                     <div class="card justify-content-evenly w-50 h-50">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1lhs71HbZ6S6cAR6VQVrpW2dolhw&hl=en&ehbc=2E312F"></iframe>
+                    <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1lhs71HbZ6S6cAR6VQVrpW2dolhw&hl=en&ehbc=2E312F"></iframe> -->
                   </div>
                 </div>
               </div>
