@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid">
-        <div class="mb-4 flex-center">
+        <div class="flex-center">
         <a
               href="https://github.com/Tashreeqlee"
               target="_blank"
@@ -66,5 +66,4 @@
 .icon-link:hover {
   transform: scale(1.3);
 }
-
 </style>

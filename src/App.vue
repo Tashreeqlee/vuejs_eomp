@@ -1,12 +1,7 @@
 <template>
-  
   <Navbar/>
-  <main class="container-fluid">
   <router-view/>
-  </main>
   <Footer/>
-  <Spinner/>
-  
 </template>
 <script>
 import Navbar from './components/Navbar.vue';

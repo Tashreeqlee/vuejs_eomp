@@ -41,7 +41,12 @@
 </template>
 
 <script>
+import Spinner from '@/components/Spinner.vue';
+
 export default {
+  components: {
+    Spinner
+  },
   computed: {
     projects() {
       return this.$store.state.projects;
@@ -90,4 +95,12 @@ button:hover{
 #card:hover {
   transform: scale(1.1);
 }
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 2%;
+  }
+}
+
 </style>
